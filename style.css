@@ -1,0 +1,40 @@
+h1 {
+    text-align: center;
+}
+
+.container {
+    border: solid 1px;
+    height: 500px;
+    width: 500px;
+    margin: auto;
+    -webkit-user-drag: none;
+    
+}
+
+#grid {
+    display: grid;
+    border: solid 1px;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+    height: 100%;
+    border: solid 1px;
+    -webkit-user-drag: none;
+}
+
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+}
+
+.grid-item {
+    border: solid rgba(0, 0, 0, 0.05) 1px;
+    
+    text-align: center;
+    -webkit-user-drag: none;
+}
+
+.controls {
+    text-align: center;
+    -webkit-user-drag: none;
+}
+
