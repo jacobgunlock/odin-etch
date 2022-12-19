@@ -4,10 +4,13 @@ h1 {
 
 .container {
     border: solid 1px;
+    border-radius: 20px;
     height: 500px;
     width: 500px;
     margin: auto;
     -webkit-user-drag: none;
+    background-color: rgb(245, 59, 59);
+    padding: 40px;
     
 }
 
@@ -19,6 +22,7 @@ h1 {
     height: 100%;
     border: solid 1px;
     -webkit-user-drag: none;
+    background-color: white;
 }
 
 :root {
@@ -27,8 +31,7 @@ h1 {
 }
 
 .grid-item {
-    border: solid rgba(0, 0, 0, 0.05) 1px;
-    
+    border: solid rgba(0, 0, 0, 0.03) 1px;
     text-align: center;
     -webkit-user-drag: none;
 }
@@ -37,4 +40,15 @@ h1 {
     text-align: center;
     -webkit-user-drag: none;
 }
+
+.controls {
+    width: 530px;
+    margin: 0 auto;
+    padding: 2%;
+    border: solid 1px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;}
 
