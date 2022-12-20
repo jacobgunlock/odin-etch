@@ -1,28 +1,41 @@
+body {
+    background-color: lightskyblue;
+    min-width: 700px;
+}
+
 h1 {
+    margin: auto;
+    padding: 0%;
     text-align: center;
+    transform: translateY(75px);
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+    font-size: 45px;
+    text-shadow: rgba(0, 0, 0, 1) 3px 3px 2px;
 }
 
 .container {
-    border: solid 1px;
+    border: solid;
     border-radius: 20px;
     height: 500px;
-    width: 500px;
+    width: 600px;
     margin: auto;
     -webkit-user-drag: none;
-    background-color: rgb(245, 59, 59);
-    padding: 40px;
-    
+    background-color: rgb(248, 20, 20);
+    padding: 100px;
+    box-shadow: rgba(0, 0, 0, 1) 4px 1px 8px;
 }
 
 #grid {
+    background-color: white;
+    border: solid;
     display: grid;
-    border: solid 1px;
     grid-template-rows: repeat(var(--grid-rows), 1fr);
     grid-template-columns: repeat(var(--grid-cols), 1fr);
     height: 100%;
-    border: solid 1px;
     -webkit-user-drag: none;
-    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.7) 1px 1px 7px;
+    transform: translateY(-10px);
 }
 
 :root {
@@ -37,18 +50,62 @@ h1 {
 }
 
 .controls {
-    text-align: center;
-    -webkit-user-drag: none;
-}
-
-.controls {
-    width: 530px;
+    width: 180px;
     margin: 0 auto;
     padding: 2%;
-    border: solid 1px;
+    border: solid;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 10px;}
+    row-gap: 10px;
+    transform: translateY(-100px);
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 1) 2px 1px 2px;
+}
 
+#sizeValue {
+    color: black;
+    font-size: larger;
+    font-weight: bold;
+}
+
+#sizeSlider {
+    cursor: pointer;
+}
+
+#clear {
+    font-weight: bold;
+    border: solid;
+    border-radius: 50%;
+    height: 90px;
+    width: 90px;
+    transform: translate(-80px, -15px);
+    text-shadow: rgba(0, 0, 0, 0.1) 2px 1px 1px;
+    font-size: large;
+    box-shadow: rgba(0, 0, 0, 1) 4px 1px 3px;
+    cursor: pointer;
+}
+
+
+#color {
+    border: solid;
+    border-radius: 50%;
+    height: 90px;
+    width: 90px;
+    padding: 20px;
+    transform: translate(498px, -2px);
+    box-shadow: rgba(0, 0, 0, 1) -3px 1px 2px;
+    cursor: pointer;
+}
+
+#footer {
+    text-align: center;
+    border: solid;
+    width: 200px;
+    margin: 0 auto;
+    transform: translateY(20px);
+    padding: 5px;
+    background-color: white;
+    border-radius: 10px;
+}
